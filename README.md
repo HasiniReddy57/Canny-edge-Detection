@@ -5,12 +5,12 @@ To develop an efficient edge detection algorithm that accurately identifies edge
 
 ## Key Components
 
-Gaussian Smoothing: Reduces noise in the input image to prepare for gradient calculation.
-Gradient Computation: Calculates the gradient in both the x and y directions to identify the intensity of edges.
-Magnitude and Direction: Determines the strength and direction of edges using the calculated gradients.
-Non-Maximum Suppression: Refines edge detection by eliminating non-maximum responses, enhancing the accuracy of edge localization.
-Hysteresis Thresholding: Applies dual thresholds to distinguish strong edges from weak ones, allowing for continuous edge tracing.
-Modular Design: Each stage of the edge detection process is encapsulated in separate SystemC modules, ensuring a clean, organized architecture that allows for easy testing and modifications.
+* Gaussian Smoothing: Reduces noise in the input image to prepare for gradient calculation.
+* Gradient Computation: Calculates the gradient in both the x and y directions to identify the intensity of edges.
+* Magnitude and Direction: Determines the strength and direction of edges using the calculated gradients.
+* Non-Maximum Suppression: Refines edge detection by eliminating non-maximum responses, enhancing the accuracy of edge localization.
+* Hysteresis Thresholding: Applies dual thresholds to distinguish strong edges from weak ones, allowing for continuous edge tracing.
+* Modular Design: Each stage of the edge detection process is encapsulated in separate SystemC modules, ensuring a clean, organized architecture that allows for easy testing and modifications.
 
 ## Data Flow
 Utilizes sc_fifo channels for efficient inter-module communication, ensuring smooth data transfer and maintaining real-time processing capabilities.
